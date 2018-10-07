@@ -17,73 +17,73 @@ android:layout_height="match_parent"-->
 
         <Button
             android:id="@+id/btnButton10"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply1"></Button>
 
         <Button
             android:id="@+id/btnButton20"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply2"></Button>
 
         <Button
             android:id="@+id/btnButton30"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply3"></Button>
 
         <Button
             android:id="@+id/btnButton40"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply4"></Button>
 
         <Button
             android:id="@+id/btnButton50"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply5"></Button>
 
         <Button
             android:id="@+id/btnButton60"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply6"></Button>
 
         <Button
             android:id="@+id/btnButton70"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply7"></Button>
 
         <Button
             android:id="@+id/btnButton80"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply8"></Button>
 
         <Button
             android:id="@+id/btnButton90"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply9"></Button>
 
         <Button
             android:id="@+id/btnButton100"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply10"></Button>
 
         <Button
             android:id="@+id/btnButton110"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply11"></Button>
 
         <Button
             android:id="@+id/btnButton120"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Apply12"></Button>
     </LinearLayout>

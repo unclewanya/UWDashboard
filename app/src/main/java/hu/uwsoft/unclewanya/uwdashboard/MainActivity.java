@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         // this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+/*
         final Handler handler = new Handler();
         Timer timer = new Timer(false);
         TimerTask timerTask = new TimerTask() {
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+*/
     }
-
 
 }
