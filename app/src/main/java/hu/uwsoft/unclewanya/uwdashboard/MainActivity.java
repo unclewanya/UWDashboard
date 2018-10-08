@@ -16,22 +16,37 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnStart;
-    Button btnExit;
+    UWDashboardApp app;
+    Button btnButton1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        app = UWDashboardApp.instance();
         setContentView(R.layout.activity_main);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         // this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         // this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-/*
         final Handler handler = new Handler();
         Timer timer = new Timer(false);
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Do whatever you want
+                        btnButton1 = (Button) findViewById(R.id.btnButton1);
+                        btnButton1.setText(Calendar.getInstance().getTime().toString());
+                    }
+                });
+            }
+        };
+
+        timer.schedule(timerTask, 250, 250); // 1000 = 1 second.
+/*
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
