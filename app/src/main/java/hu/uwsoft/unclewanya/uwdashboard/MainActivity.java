@@ -9,15 +9,18 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     UWDashboardApp app;
     Button btnButton1;
+    ProgressBar pbarSecond;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        // Do whatever you want
+                        Calendar calendar = Calendar.getInstance();
                         btnButton1 = (Button) findViewById(R.id.btnButton1);
-                        btnButton1.setText(Calendar.getInstance().getTime().toString());
+                        btnButton1.setText(calendar.getTime().toString());
+                        pbarSecond = (ProgressBar)findViewById(R.id.pbarSecond);
+                        pbarSecond.setProgress(calendar.get(Calendar.SECOND));
                     }
                 });
             }

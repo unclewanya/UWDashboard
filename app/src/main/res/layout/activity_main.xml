@@ -19,6 +19,14 @@
         android:layout_weight="1"
         android:text="Button" />
 
+    <ProgressBar
+        android:id="@+id/pbarSecond"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:max="59" />
+
     <Button
         android:id="@+id/btnButton3"
         android:layout_width="match_parent"
